@@ -13,7 +13,7 @@ with open ("articles.csv",encoding="utf-8") as f:
 app=Flask(__name__)
 @app.route('/getArticle')
 
-def getMovie():
+def getArticle():
     return jsonify({'data':all_articles[0],"status":"success"})
 
 @app.route('/likedArticle',methods=["POST"])
